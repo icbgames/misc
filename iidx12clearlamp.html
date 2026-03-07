@@ -1,0 +1,679 @@
+<html>
+<head>
+<style type="text/css">
+body {
+  font-size: 12px;
+}
+
+table {
+  font-size: 12px;
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 0;
+}
+th, td {
+  border: 1px black solid;
+}
+th {
+  text-align: center;
+  background-color: #b8b8b8;
+  padding: 0;
+}
+td {
+  text-align: center;
+  padding: 0;
+}
+.player {
+  width: 6em;
+}
+.music {
+  font-size: 90%;
+  text-align: left;
+  max-width: 16em;
+  overflow-x: hidden;
+  padding: 0 1em;
+}
+.fc     { background-color: orange; }
+.exh    { background-color: yellow; }
+.hard   { background-color: #ff6666; }
+.c      { background-color: cyan; }
+.easy   { background-color: lightgreen; }
+.assist { background-color: #eebbff; }
+.np     { background-color: white; }
+.failed { background-color: #e0e0e0; }
+</style>
+
+</head>
+<body>
+<div>
+<table>
+<tr><th>曲名</th><th class="player">CAFE</th><th class="player">ZAQRO</th><th class="player">MANMA</th><th class="player">RUSTEA</th><th class="player">ICB</th><th class="player">TAMAMO</th></tr>
+<tr><td class="music">千年ノ理</td><td class="fc">FC</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="hard">HC</td><td class="hard">HC</td></tr>
+<tr><td class="music">snow storm [L]</td><td class="fc">FC</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td></tr>
+<tr><td class="music">mosaic</td><td class="exh">EXH</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td></tr>
+<tr><td class="music">SPECIAL SUMMER CAMPAIGN!</td><td class="exh">EXH</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td></tr>
+<tr><td class="music">スパークリング☆彡ハイパーチューン！！</td><td class="exh">EXH</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td></tr>
+<tr><td class="music">Primitive Vibes</td><td class="exh">EXH</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="hard">HC</td><td class="c">C</td></tr>
+<tr><td class="music">sakura storm</td><td class="exh">EXH</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">CUE CUE RESCUE [L]</td><td class="exh">EXH</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">Apocalypse</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td></tr>
+<tr><td class="music">Raspberry Railgun</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td></tr>
+<tr><td class="music">Ristaccia</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td></tr>
+<tr><td class="music">Steel Edge</td><td class="exh">EXH</td><td class="exh">EXH</td><td class="hard">HC</td><td class="easy">EC</td><td class="hard">HC</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">Carry Me Away</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td></tr>
+<tr><td class="music">KING [L]</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="hard">HC</td></tr>
+<tr><td class="music">Symmetry</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="hard">HC</td></tr>
+<tr><td class="music">紅牡丹</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="hard">HC</td></tr>
+<tr><td class="music">残像ニ繋ガレタ追憶ノHIDEAWAY</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="hard">HC</td><td class="hard">HC</td></tr>
+<tr><td class="music">oratio</td><td class="fc">FC</td><td class="easy">EC</td><td class="c">C</td><td class="failed">FAILED</td><td class="c">C</td><td class="easy">EC</td></tr>
+<tr><td class="music">Highcharge Divolt</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td></tr>
+<tr><td class="music">Rampage</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td></tr>
+<tr><td class="music">RED ZONE [L]</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="hard">HC</td></tr>
+<tr><td class="music">TROOPERS</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td></tr>
+<tr><td class="music">encounter</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td></tr>
+<tr><td class="music">glacia</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td></tr>
+<tr><td class="music">Hat Surprise (Season 2)</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td></tr>
+<tr><td class="music">JUSTICE/GUILTY feat. Nana Takahashi &amp; 709sec.</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td></tr>
+<tr><td class="music">Rave Cannon</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td></tr>
+<tr><td class="music">The Sampling Paradise</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td></tr>
+<tr><td class="music">九尾狐夜行</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td></tr>
+<tr><td class="music">《PL|RAYER》</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">A</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">Beat Radiance [L]</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="hard">HC</td></tr>
+<tr><td class="music">gigadelic [H]</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">LIGHTNING STRIKES</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td></tr>
+<tr><td class="music">Summerlights(IIDX Edition)</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td></tr>
+<tr><td class="music">Fegrix</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td></tr>
+<tr><td class="music">LASER CRUSTER</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="c">C</td></tr>
+<tr><td class="music">Little Star</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td></tr>
+<tr><td class="music">Parvati</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td></tr>
+<tr><td class="music">Thunderbolt</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td></tr>
+<tr><td class="music">刃図羅</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td></tr>
+<tr><td class="music">フォニイ [L]</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">Arca</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="easy">EC</td></tr>
+<tr><td class="music">Concertino in Blue</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="c">C</td><td class="c">C</td></tr>
+<tr><td class="music">F</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="hard">HC</td><td class="c">C</td></tr>
+<tr><td class="music">frequent</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="easy">EC</td></tr>
+<tr><td class="music">GRID KNIGHT [L]</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="hard">HC</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">invoker</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">LIVE DRIVING!! feat. 花たん</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="c">C</td></tr>
+<tr><td class="music">ONE AND ONLY</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="hard">HC</td><td class="easy">EC</td><td class="c">C</td></tr>
+<tr><td class="music">SpaceLand☆TOYBOX</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="c">C</td><td class="c">C</td></tr>
+<tr><td class="music">Todestrieb</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="c">C</td><td class="c">C</td></tr>
+<tr><td class="music">黒髪乱れし修羅となりて</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="easy">EC</td></tr>
+<tr><td class="music">表裏一体！？怪盗いいんちょの悩み</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="c">C</td></tr>
+<tr><td class="music">ΕΛΠΙΣ</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="c">C</td><td class="c">C</td></tr>
+<tr><td class="music">ALBIDA</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">SOLID STATE SQUAD</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Ancient Scapes</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="easy">EC</td></tr>
+<tr><td class="music">BIGソムタム</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="hard">HC</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">BLAZING_LAZER</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="c">C</td><td class="c">C</td></tr>
+<tr><td class="music">V</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="hard">HC</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">Venom</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">カゴノトリ～弐式～</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="hard">HC</td><td class="easy">EC</td></tr>
+<tr><td class="music">VANESSA</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">FIRE FIRE</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">moon_child</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="easy">EC</td></tr>
+<tr><td class="music">〆</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="c">C</td><td class="easy">EC</td></tr>
+<tr><td class="music">華蝶風雪 [L]</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="c">C</td><td class="easy">EC</td></tr>
+<tr><td class="music">神のシナリオ</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">Aqvion</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Double Dribble</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="hard">HC</td><td class="np">-</td></tr>
+<tr><td class="music">Fire Beat</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="np">-</td><td class="hard">HC</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">gigadelic [A]</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="hard">HC</td><td class="np">-</td></tr>
+<tr><td class="music">NINJA IS DEAD IIDX ver.</td><td class="hard">HC</td><td class="exh">EXH</td><td class="c">C</td><td class="easy">EC</td><td class="hard">HC</td><td class="np">-</td></tr>
+<tr><td class="music">Persephone</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Scripted Connection⇒ H mix [L]</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Sirius</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">グッバイ宣言 [L]</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">神っぽいな [L]</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">即席！脳直★ミュージックシステム</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">電人、暁に斃れる。</td><td class="exh">EXH</td><td class="c">C</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">#CMFLG</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="easy">EC</td><td class="c">C</td></tr>
+<tr><td class="music">AA</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="c">C</td></tr>
+<tr><td class="music">thunder HOUSE NATION Remix [L]</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="c">C</td><td class="easy">EC</td></tr>
+<tr><td class="music">TIEFSEE</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="c">C</td><td class="easy">EC</td></tr>
+<tr><td class="music">それは花火のような恋</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="failed">FAILED</td><td class="easy">EC</td></tr>
+<tr><td class="music">紫陽花 -AZISAI-</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="c">C</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">雪月花</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">Nothing but Theory [L]</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">狂イ咲ケ焔ノ華</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">The Least 100sec</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="np">-</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">めいさいアイドル☆あいむちゃん♪</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="easy">EC</td></tr>
+<tr><td class="music">FlyAway</td><td class="exh">EXH</td><td class="hard">HC</td><td class="easy">EC</td><td class="c">C</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">Gravigazer</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Megalara Garuda</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">SAY BAY</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">海神</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Broken</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="failed">FAILED</td><td class="c">C</td><td class="easy">EC</td></tr>
+<tr><td class="music">Catch Our Fire!</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="failed">FAILED</td><td class="easy">EC</td></tr>
+<tr><td class="music">Feel The Beat</td><td class="exh">EXH</td><td class="c">C</td><td class="hard">HC</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td></tr>
+<tr><th>曲名</th><th class="player">CAFE</th><th class="player">ZAQRO</th><th class="player">MANMA</th><th class="player">RUSTEA</th><th class="player">ICB</th><th class="player">TAMAMO</th></tr>
+<tr><td class="music">Friction[!]Function</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="easy">EC</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">Stereo Beasts</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="failed">FAILED</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">Adularia</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">B.O.D.Y.</td><td class="exh">EXH</td><td class="hard">HC</td><td class="easy">EC</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Kung-fu Empire [L]</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Lethal Weapon</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">M4K3 1T B0UNC3</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">NNRT</td><td class="exh">EXH</td><td class="hard">HC</td><td class="easy">EC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">スーパー戦湯ババンバーン</td><td class="exh">EXH</td><td class="c">C</td><td class="easy">EC</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">eRAseRmOToRpHAntOM</td><td class="exh">EXH</td><td class="c">C</td><td class="c">C</td><td class="np">-</td><td class="hard">HC</td><td class="np">-</td></tr>
+<tr><td class="music">Matt Silver</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">True Blue</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="easy">EC</td></tr>
+<tr><td class="music">WONDER WALKER</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="easy">EC</td></tr>
+<tr><td class="music">シュレーディンガーの猫</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="easy">EC</td></tr>
+<tr><td class="music">少年A</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="np">-</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">Rave*it!! Rave*it!!</td><td class="exh">EXH</td><td class="c">C</td><td class="c">C</td><td class="easy">EC</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">Innocent Walls [A]</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="hard">HC</td><td class="hard">HC</td><td class="np">-</td></tr>
+<tr><td class="music">Innocent Walls [H]</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="hard">HC</td><td class="hard">HC</td><td class="np">-</td></tr>
+<tr><td class="music">spiral galaxy [L]</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">The Onlyonez</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">GAIA</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">RAIN</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">RALLY &#039;25</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Silver Bullet</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Sword of Vengeance</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="hard">HC</td><td class="easy">EC</td><td class="c">C</td></tr>
+<tr><td class="music">新宝島 [L]</td><td class="exh">EXH</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">ACT0</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Dahlia</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Drastic Dramatic</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="easy">EC</td></tr>
+<tr><td class="music">GAME ON</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="hard">HC</td><td class="hard">HC</td><td class="np">-</td></tr>
+<tr><td class="music">No Border</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="easy">EC</td></tr>
+<tr><td class="music">Seven Times Four</td><td class="exh">EXH</td><td class="hard">HC</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">ZZ</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">華爛漫 -Flowers- [L]</td><td class="exh">EXH</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="c">C</td></tr>
+<tr><td class="music">天邪鬼</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="easy">EC</td></tr>
+<tr><td class="music">電光</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">恋する☆宇宙戦争っ！！</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">Colors (radio edit)</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="easy">EC</td></tr>
+<tr><td class="music">dAuntl3ss</td><td class="exh">EXH</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">destination</td><td class="exh">EXH</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">dica dica</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td></tr>
+<tr><td class="music">DUE TOMORROW</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="hard">HC</td><td class="hard">HC</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">L.F.O</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Nightmare before oversleep</td><td class="exh">EXH</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="easy">EC</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">Roar of Chronos</td><td class="exh">EXH</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Ypsilon [L]</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">疾風迅雷</td><td class="exh">EXH</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">COSMIC V3LOCITY</td><td class="exh">EXH</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">GENE</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Out of Control</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="hard">HC</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">refrain</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">SCREAM SQUAD</td><td class="hard">HC</td><td class="c">C</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">灼熱 Lost Summer Dayz</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="hard">HC</td><td class="np">-</td></tr>
+<tr><td class="music">GUILTY [L]</td><td class="exh">EXH</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Vinculum stellarum</td><td class="exh">EXH</td><td class="hard">HC</td><td class="c">C</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">A MINSTREL ～ ver. short-scape ～ [L]</td><td class="exh">EXH</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">AKASHIC BREAK</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Candy Galy</td><td class="exh">EXH</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Disco Killer Music Lover</td><td class="exh">EXH</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">MAD ATTACK [L]</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="hard">HC</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">Meissa</td><td class="exh">EXH</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Smalt #28598F</td><td class="exh">EXH</td><td class="easy">EC</td><td class="hard">HC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Super Rush</td><td class="exh">EXH</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">THE DAY OF JUBILATIONS</td><td class="exh">EXH</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Umbral [L]</td><td class="exh">EXH</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">終焔のClaudia</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">童話回廊</td><td class="exh">EXH</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">不沈艦CANDY</td><td class="exh">EXH</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">EBONY &amp; IVORY</td><td class="exh">EXH</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="easy">EC</td></tr>
+<tr><td class="music">entelecheia</td><td class="exh">EXH</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">Ghost Pulse</td><td class="exh">EXH</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">one or eight</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">Rave Patroller</td><td class="exh">EXH</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">Say YEEEAHH</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="c">C</td><td class="easy">EC</td></tr>
+<tr><td class="music">Valanga</td><td class="exh">EXH</td><td class="c">C</td><td class="easy">EC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">ハイテックトキオ [L]</td><td class="exh">EXH</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Close the World feat.a☆ru</td><td class="exh">EXH</td><td class="c">C</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="easy">EC</td></tr>
+<tr><td class="music">CODE:1 [revision1.0.1]</td><td class="exh">EXH</td><td class="c">C</td><td class="c">C</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">DRUNK MONKY</td><td class="exh">EXH</td><td class="c">C</td><td class="c">C</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">GOLDEN CROSS</td><td class="exh">EXH</td><td class="c">C</td><td class="c">C</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">ICARUS</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="c">C</td><td class="hard">HC</td><td class="np">-</td></tr>
+<tr><td class="music">Liberation</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">Watch Out Pt.2</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">火影</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="hard">HC</td><td class="np">-</td></tr>
+<tr><td class="music">雪上断火</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="hard">HC</td><td class="np">-</td></tr>
+<tr><td class="music">龍王の霊廟(Mausoleum Of The Primal Dragon) [L]</td><td class="exh">EXH</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">Amazing Mirage [L]</td><td class="exh">EXH</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Caterpillar</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td></tr>
+<tr><td class="music">Cosmic Cat [L]</td><td class="exh">EXH</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Proof of the existence</td><td class="exh">EXH</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Sense 2007</td><td class="exh">EXH</td><td class="easy">EC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Super Freak</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="easy">EC</td><td class="easy">EC</td></tr>
+<tr><td class="music">TECHNO Style Essentials</td><td class="exh">EXH</td><td class="c">C</td><td class="c">C</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Welcome [L]</td><td class="exh">EXH</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">禊</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="c">C</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">BITTER CHOCOLATE STRIKER</td><td class="exh">EXH</td><td class="easy">EC</td><td class="c">C</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">garden [L]</td><td class="exh">EXH</td><td class="failed">FAILED</td><td class="hard">HC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Triple Cross</td><td class="exh">EXH</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">ミラージュ・レジデンス [L]</td><td class="exh">EXH</td><td class="c">C</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">ワルツ第17番 ト短調”大犬のワルツ”</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="failed">FAILED</td><td class="hard">HC</td><td class="np">-</td></tr>
+<tr><th>曲名</th><th class="player">CAFE</th><th class="player">ZAQRO</th><th class="player">MANMA</th><th class="player">RUSTEA</th><th class="player">ICB</th><th class="player">TAMAMO</th></tr>
+<tr><td class="music">桜</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">BIGWAVERS</td><td class="exh">EXH</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">DEADHEAT</td><td class="exh">EXH</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="c">C</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Dr. Chemical &amp; Killing Machine</td><td class="exh">EXH</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">EVANESCENT</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="np">-</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">innocent revolver</td><td class="exh">EXH</td><td class="easy">EC</td><td class="c">C</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">KILL EACH OTHER</td><td class="exh">EXH</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Little Little Princess [L]</td><td class="exh">EXH</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Ou Legends</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="easy">EC</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">Sky High</td><td class="exh">EXH</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">THE DEEP STRIKER [L]</td><td class="exh">EXH</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">The Last Apocalypse</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="easy">EC</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">TOGAKUSHI</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="c">C</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">Ubertreffen [L]</td><td class="exh">EXH</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">トリカゴノ鳳凰</td><td class="exh">EXH</td><td class="easy">EC</td><td class="c">C</td><td class="np">-</td><td class="failed">FAILED</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">リリーゼと炎龍レーヴァテイン</td><td class="exh">EXH</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">龍と少女とデコヒーレンス [L]</td><td class="exh">EXH</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">AA -rebuild-</td><td class="exh">EXH</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Evans</td><td class="hard">HC</td><td class="easy">EC</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">MARLIN</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Peaktime Booster</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">PLASMA SOUL NIGHT feat. Nana Takahashi / 709sec.</td><td class="exh">EXH</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">STARLIGHT DANCEHALL [L]</td><td class="exh">EXH</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Viridian</td><td class="exh">EXH</td><td class="easy">EC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">たまゆら</td><td class="exh">EXH</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Broken Sword</td><td class="exh">EXH</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">Colorful Cookie</td><td class="exh">EXH</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="failed">FAILED</td><td class="easy">EC</td></tr>
+<tr><td class="music">FUZIN RIZIN</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="easy">EC</td></tr>
+<tr><td class="music">HARD BRAIN</td><td class="exh">EXH</td><td class="c">C</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">PUNISHER</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="easy">EC</td></tr>
+<tr><td class="music">FANTASTIC THREE</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">We&#039;re so Happy (P*Light Remix) IIDX ver.</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">イザナミノナゲキ</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">儚キ戀ノ幻想譚</td><td class="exh">EXH</td><td class="easy">EC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">#MAGiCVLGiRL_TRVP_B3VTZ</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">DIVINE JUDGEMENT</td><td class="hard">HC</td><td class="hard">HC</td><td class="hard">HC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">EYE OF THE HEAVEN</td><td class="exh">EXH</td><td class="np">-</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">LASER CRUSTER (IGNITE REMIX)</td><td class="exh">EXH</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">POSSESSION</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="np">-</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Scripted Connection⇒ A mix</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="np">-</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Slipstream</td><td class="exh">EXH</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">摩天楼</td><td class="exh">EXH</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">魔法のかくれんぼ</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">CaptivAte～浄化～ [L]</td><td class="exh">EXH</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">chaplet -IIDX re:build-</td><td class="exh">EXH</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Idola</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Level 2</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="easy">EC</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">Visterhv</td><td class="exh">EXH</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">旋律のドグマ～Miserables～</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Chaotoxin</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="easy">EC</td></tr>
+<tr><td class="music">One More Lovely</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">最小三倍完全数</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">聖人の塔</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="np">-</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">Always We Trust In You</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Go Beyond!!</td><td class="c">C</td><td class="c">C</td><td class="easy">EC</td><td class="c">C</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">PLEASE DON&#039;T GO</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Push on Beats!～音ゲの国のeX-ストリーマー～</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Red. by Full Metal Jacket</td><td class="hard">HC</td><td class="c">C</td><td class="failed">FAILED</td><td class="c">C</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">waxing and wanding [L]</td><td class="exh">EXH</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Konzert V</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="np">-</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Marie Antoinette [L]</td><td class="exh">EXH</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Papilio ulysses</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">Trill auf G</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="np">-</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">ATHER [L]</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">cinder</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Fascination MAXX</td><td class="c">C</td><td class="c">C</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="hard">HC</td><td class="np">-</td></tr>
+<tr><td class="music">fffff</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Million Dollar</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">rage against usual</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">RINNE</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">ruin of opals</td><td class="hard">HC</td><td class="hard">HC</td><td class="c">C</td><td class="np">-</td><td class="failed">FAILED</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">Snake Stick</td><td class="hard">HC</td><td class="c">C</td><td class="failed">FAILED</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Without Heaven</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">仮想空間の旅人たち [L]</td><td class="exh">EXH</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">24h Endurance Race</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Aftermath</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Bring The Fire</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">DropZ-Line-</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">From Human Blood</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Here We Go Now</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">IMPLANTATION</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">ONIGOROSHI</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Sounds Of Summer</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Space Battleship S4TO</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">X</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Xperanza</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">199024club -Re:BounceKiller-</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="hard">HC</td><td class="np">-</td></tr>
+<tr><td class="music">Arabian Rave Night [L]</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">DOMINION</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="easy">EC</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">Drop Syndicate</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Mid-Corner (Magic Maker)</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Angel&#039;s Ladder</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">DARK LEGACY</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="easy">EC</td></tr>
+<tr><td class="music">Last Dance</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">MAX 360</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">OTENAMI Hurricane</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">u gotta beat</td><td class="hard">HC</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">未完成ノ蒸氣驅動乙女</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">AO-1</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">ASIAN VIRTUAL REALITIES (MELTING TOGETHER IN DAZZLING DARKNESS)</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><th>曲名</th><th class="player">CAFE</th><th class="player">ZAQRO</th><th class="player">MANMA</th><th class="player">RUSTEA</th><th class="player">ICB</th><th class="player">TAMAMO</th></tr>
+<tr><td class="music">Burning Flame [L]</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Devilz Staircase</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">DUAL STRIKER</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Flying Castle</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Godspeed</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Invitation from Mr.C</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">kors k&#039;s How to make OTOGE CORE 「LONG」</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">NITROUS CANNON</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">ORCA</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">ra&#039;am</td><td class="hard">HC</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">rommmo</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Session 9 -Chronicles-</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">THANK YOU FOR PLAYING [L]</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Timepiece phase II</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">キャトられ恋はモ～モク</td><td class="hard">HC</td><td class="easy">EC</td><td class="c">C</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">ビビッド ☆+*。キラキライム</td><td class="hard">HC</td><td class="hard">HC</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">夏色DIARY - L.E.D.-G STYLE MIX -</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">轟け！恋のビーンボール！！</td><td class="hard">HC</td><td class="c">C</td><td class="c">C</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">今宵、ロマンス横丁。</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">DIAMOND CROSSING</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Flashes</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">hora de verdad</td><td class="hard">HC</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">INSOMNIA</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">LOST TECHNOLOGIE</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">NEO GENERATOR SEVEN</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">PARANOiA ～HADES～</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">T-REX vs Velociraptor (In the Far east euphoria)</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">アラビアン ハイパー ナイト</td><td class="hard">HC</td><td class="easy">EC</td><td class="c">C</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">バッド・スイーツ、バッド・ドリーム</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">子供の落書き帳</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">深淵に捧ぐレクイエム</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">電腦都市</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">恋愛＝精度×認識力</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">1116</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Arkadia</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">BLUE MIRAGE</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Don&#039;t believe the hype</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">EX-MASSIVE FIGHTER</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">EXUSIA</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Grand Chariot</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">I</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Illusionary Waterlily</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Monopole.</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">One for All</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">QUANTUM TELEPORTATION [L]</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">SISYPHUS</td><td class="hard">HC</td><td class="np">-</td><td class="easy">EC</td><td class="np">-</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">StrayedCatz</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Vermilion Carol</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">VOX UP</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Xb10r</td><td class="hard">HC</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">少年は空を辿る</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">ΕΛΠΙΣ [L]</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">255</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">2 Beasts Unchained</td><td class="hard">HC</td><td class="c">C</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Dances with Snow Fairies</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">DORNWALD ～Junge～</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">HADES</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">MAXIMUM CHEAT GIRL</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">New Castle Legions</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Resonant</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">SCREW // owo // SCREW</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Snakey Kung-fu</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Sol Cosine Job 2</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">SOLID STATE SQUAD -RISEN RELIC REMIX-</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Twelfth Style [L]</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">アストライアの双皿</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">ぞうしょく！？マイデンティティ</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">ピアノ協奏曲第１番”蠍火”</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">逆月</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">灼熱Beach Side Bunny (かめりあ&#039;s &quot;Summertime D&#039;n&#039;B&quot; Remix)</td><td class="c">C</td><td class="c">C</td><td class="failed">FAILED</td><td class="np">-</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">神謳 -RESONANCE-</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Caldwell 99 [L]</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Dynamite</td><td class="c">C</td><td class="easy">EC</td><td class="easy">EC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">quell～the seventh slave～</td><td class="hard">HC</td><td class="assist">AC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">reunion</td><td class="hard">HC</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">YAKSHA</td><td class="hard">HC</td><td class="c">C</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">廿 [L]</td><td class="hard">HC</td><td class="c">C</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">BLUE DRAGON(雷龍RemixIIDX)</td><td class="hard">HC</td><td class="c">C</td><td class="failed">FAILED</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Cult Invitation</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Devil&#039;s Gear</td><td class="hard">HC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Macho Monky</td><td class="hard">HC</td><td class="c">C</td><td class="failed">FAILED</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">†渚の小悪魔ラヴリィ～レイディオ†(IIDX EDIT)</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">ABSOLUTE EVIL</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Antigravity</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Boomy and The Boost</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">DAY DREAM</td><td class="np">-</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Demon March</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Empire of Fury</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">FAKE TIME</td><td class="hard">HC</td><td class="assist">AC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">fallen leaves -IIDX edition-</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">four pieces of heaven [L]</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">G59</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">GRAVITON</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">HAERETICUS</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Hollywood Galaxy</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Life Is A Game ft.DD&quot;ナカタ&quot;Metal</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Lightspeed</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">MENDES</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">neu</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">SYNC-ANTHEM</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><th>曲名</th><th class="player">CAFE</th><th class="player">ZAQRO</th><th class="player">MANMA</th><th class="player">RUSTEA</th><th class="player">ICB</th><th class="player">TAMAMO</th></tr>
+<tr><td class="music">The Chase</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">The Limbo</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Triple Counter</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">TRIUMPH</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Uaigh Gealai</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Unbelief</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Vitrum</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Xlo</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">yellow head joe [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">カジノファイヤーことみちゃん [L]</td><td class="c">C</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">世界の果てに約束の凱歌を -ReUnion-</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">津軽雪</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">抱きしめてモナムール</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">魅惑のYUMMYスイーツ</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">烽火連天の刃</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Bad Maniacs</td><td class="hard">HC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">MAX 300</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">水鏡の異界</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">ChaserXX [L]</td><td class="hard">HC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Flamingo</td><td class="hard">HC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">JOMANDA</td><td class="c">C</td><td class="assist">AC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Memoria Obscura</td><td class="hard">HC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">TOXIC VIBRATION</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">ιgniЯRuina</td><td class="hard">HC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">-65℃</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">[ ]DENTITY</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">∀</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">2 Be Continued</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Ancient Scapes [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Anisakis -somatic mutation type&quot;Forza&quot;- [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">B4U(BEMANI FOR YOU MIX) [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Blue Spring Express</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Bow shock!! [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">CHRONO DIVER -NORNIR- [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Close the World feat.a☆ru [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">CODE:0 [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">CONTRACT [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">ECHIDNA</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Elektrick U-Phoria [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">INAZUMA [L]</td><td class="hard">HC</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Initiation</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">LIGHTNING STRIKES [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">LOUDER ROLLING THUNDER</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">NOIXIA</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">NZM</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">PARADISE LOST</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">POLKAMANIA [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Regina vespaE</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">REVOLVER [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Saturn [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Smashing Wedge</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">SOLID WYVERN [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">STEEL NEEDLE [L]</td><td class="easy">EC</td><td class="c">C</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">THE BRAVE MUST DIE</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">The Rebellion of Sequencer</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">がっつり陰キャ!? 怪盗いいんちょの億劫^^;</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">シムルグの目醒め</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">千年ノ理 [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">表裏一体！？怪盗いいんちょの悩み [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">恋する☆宇宙戦争っ！！ [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">AIR RAID FROM THA UNDAGROUND [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">ALBA -黎明- [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">ALTERNATOR</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">ANCHOR</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Artist</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Be quiet [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">BEAT PRISONER</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">BLACK or WHITE?</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">BLACK.by X-Cross Fade</td><td class="c">C</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Blue Rain [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">BroGamer [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Confiserie</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">COSMIC RAY</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Cross Fire</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">DEATH†ZIGOQ ～怒りの高速爆走野郎～</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Despair of ELFERIA</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Ganymede [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">GO OVER WITH GLARE -ROOTAGE 26-</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">HYENA [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Ignis†Irae</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Inferno of Fomalhaut</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">NEW GENERATION -もう、お前しか見えない- [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">O/D*20 [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Override [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Painful Fate</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Quakes</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">quaver♪</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Satellite Burst</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Scripted Connection⇒ A mix [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Secrets [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Shooting Fireball</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">SOLID STATE SQUAD [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">STULTI</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">suspicions</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Tiempo Loco</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">uen</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">VOLAQUAS</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Y&amp;Co. is dead or alive</td><td class="c">C</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">ZEPHYRANTHES [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Zirkfied</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><th>曲名</th><th class="player">CAFE</th><th class="player">ZAQRO</th><th class="player">MANMA</th><th class="player">RUSTEA</th><th class="player">ICB</th><th class="player">TAMAMO</th></tr>
+<tr><td class="music">ピアノ協奏曲第1番”蠍火” (BlackY Remix)</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">華麗なる大犬円舞曲</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">共鳴遊戯の華</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">金野火織の金色提言</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">紫陽花 -AZISAI- [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">超青少年ノ為ノ超多幸ナ超古典的超舞曲 [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">天空の夜明け</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">東京神話</td><td class="c">C</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">伐折羅-vajra-</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">invoker [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Lords Of The Roundtable</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="easy">EC</td><td class="c">C</td><td class="np">-</td></tr>
+<tr><td class="music">Pinky Happy Crazy</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">The Clown of 24stairs</td><td class="easy">EC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Violet Pulse [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">お菓子の王国</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">海神 [L]</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">閠槞彁の願い</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">≡+≡ [L]</td><td class="c">C</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">CADENZA</td><td class="hard">HC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="failed">FAILED</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">Makin&#039; It</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="easy">EC</td><td class="np">-</td></tr>
+<tr><td class="music">Feel The Beat [L]</td><td class="c">C</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">GiGaGaHell</td><td class="easy">EC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Reflux</td><td class="assist">AC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">SOLAR ECLIPSE</td><td class="c">C</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">音楽</td><td class="assist">AC</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">煉獄のエルフェリア</td><td class="c">C</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">3y3s</td><td class="c">C</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Almagest</td><td class="c">C</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Glitch N Ride</td><td class="assist">AC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">God Mind</td><td class="c">C</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">GuNGNiR</td><td class="c">C</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">KAISER PHOENIX</td><td class="c">C</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Level One</td><td class="c">C</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Miracle 5ympho X [L]</td><td class="assist">AC</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Red. by Jack Trance</td><td class="c">C</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Timepiece phase II (CN Ver.)</td><td class="c">C</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Verflucht</td><td class="c">C</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">スキッテイエェエエェ!!!!</td><td class="c">C</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">真 地獄超特急 -HELL or HELL-</td><td class="c">C</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Dances with Snow Fairies [L]</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Dans la nuit de l&#039;eternite</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">EBONY &amp; IVORY [L]</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">LOCUS OF THE TRAVEL</td><td class="c">C</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">MEGAERA</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Sigmund</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">THE PEERLESS UNDER HEAVEN</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Thor&#039;s Hammer</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">TITANS RETURN [L]</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">VANESSA [L]</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Vulnerability</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">駅猫のワルツ</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">蛇神 [L]</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">天使のカンタータ -Cantata of Angels-</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">冥</td><td class="c">C</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Ambivalent Vermilia</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">Bad Encryption</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Binary Black Hole</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Level 3</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Level 4</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">お米の美味しい炊き方、そしてお米を食べることによるその効果。 [L]</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">ディスコルディア</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">ピアノ独奏無言歌 &quot;灰燼&quot;</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">栄冠のカンパネラ</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">君のハートにロックオン [L]</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">嘆きの樹</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">EMERALDAS</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="np">-</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Everlasting Message</td><td class="assist">AC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Purple Perplex</td><td class="failed">FAILED</td><td class="easy">EC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">聖人の塔 [L]</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">#The_Relentless [L]</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Go Ahead!!</td><td class="failed">FAILED</td><td class="assist">AC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">n/a</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">perditus†paradisus</td><td class="assist">AC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">SμG@R RU$#</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">TECHNOPHOBIA</td><td class="assist">AC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">VØID</td><td class="assist">AC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">voltississimo</td><td class="assist">AC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">WHA</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">XHRONOXAPSULΞ</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">灼熱Beach Side Bunny</td><td class="assist">AC</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">二人ノ廃城幽踊宴</td><td class="assist">AC</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">烽火連天の刃 [L]</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Carmina</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">DIAVOLO</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Elemental Creation</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">hard-wired</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">ICARUS [L]</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Illegal Function Call [L]</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">IX</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">KAISER PHOENIX [L]</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">KAMAITACHI [L]</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Lost Souls [L]</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Mare Nectaris</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Phoenix [L]</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Skratch Education Lv-1</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">THE F∀UST</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">The Limbo [L]</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Time to Air [L]</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">TOMAHAWK</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">TRANOID [L]</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Verflucht [L]</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">X-DEN</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">疾風迅雷 [L]</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">卑弥呼</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">Beyond Evolution</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Chrono Diver -PENDULUMs-</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">DEATH†ZIGOQ ～怒りの高速爆走野郎～ [L]</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">GuNGNiR [L]</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Level 5</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Plan 8</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">RAGE feat.H14 of LEONAIR</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">SAMURAI-Scramble [L]</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Sigmund [L]</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Sinus Iridum</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Somnidiscotheque</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">Xerulean</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td></tr>
+<tr><td class="music">焔極OVERKILL</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="np">-</td></tr>
+<tr><td class="music">灼熱 Pt.2 Long Train Running</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">惑星鉄道</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+<tr><td class="music">EROICA</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="failed">FAILED</td><td class="np">-</td><td class="failed">FAILED</td><td class="np">-</td></tr>
+</table>
+</div>
+</body>
+</html>
