@@ -3,8 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <title>beatmania IIDX ☆12 クリアランプ比較</title>
+
 <style>
-body { font-size: 12px; margin: 0; padding: 1em; }
+body, div, table, input {
+  font-family: "BIZ UDPGothic", sans-serif;
+}
+
+input[type="text"], textarea {
+  appearance: none;
+  background-color: white;
+  font-family: inherit;
+  box-shadow: rgba(0, 0, 0, 0) 0px 1px 2px inset;
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 1.2rem;
+  height: 2.4rem;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(236, 240, 241);
+  border-image: initial;
+  margin: 0px 0px 1rem;
+  padding: 0.1rem;
+  transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
+}
+
+
+.outline {
+  margin: 0;
+  padding: 1em;
+}
+
 table { font-size: 12px; border-collapse: collapse; margin: 0.5em 0; }
 th, td { border: 1px solid #000; padding: 0.3em 0.5em; text-align: center; }
 th { background-color: #c8c8e8; }
@@ -26,9 +53,123 @@ th { background-color: #c8c8e8; }
 .ac     { background-color: #eebbff; }
 .np     { background-color: white; }
 .failed { background-color: #e0e0e0; }
-.accordion-header { cursor: pointer; background-color: #f0f0f0; padding: 0.5em; border: 1px solid #ccc; margin-bottom: 0.5em; }
-.accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
-.accordion-content.open { max-height: 1000px; } /* adjust as needed */
+.accordion-header {
+  cursor: pointer;
+  background-color: #34495e;
+  color: #ffffff;
+  padding: 1.0em;
+  border: 1px solid #ccc;
+}
+.accordion-content {
+  border: 0;
+  padding: 0 1.0em;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.accordion-content.open {
+  border: 2px solid #ecf0f1;
+  padding: 1.0em;
+  max-height: 1000px;
+}
+
+button {
+    border-style: solid;
+    border-width: 0px;
+    cursor: pointer;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0 0.1rem;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    display: inline-block;
+    padding-top: 0.2rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    background-color: #3498db;
+    border-color: #217bb8;
+    color: white;
+    transition: background-color 300ms ease-out;
+}
+
+button.round {
+  border-radius: 1000px;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  background-color: #3498db;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border-color: #258cd1 !important;
+  border-width: 2px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3498db), color-stop(5%, #3498db), color-stop(100%, #258cd1));
+  background-image: -webkit-linear-gradient(#3498db, #3498db 5%, #258cd1);
+  background-image: -moz-linear-gradient(#3498db, #3498db 5%, #258cd1);
+  background-image: -o-linear-gradient(#3498db, #3498db 5%, #258cd1);
+  background-image: linear-gradient(#3498db, #3498db 5%, #258cd1);
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0) inset;
+}
+
+table.saved-users td {
+  padding: 0.2em 1.2em;
+}
+table.saved-users thead {
+  border: 1px solid #d0d0d0;
+}
+table.saved-users th,
+table.saved-users td {
+  border: none;
+  padding: 0.2em 1.2em;
+  border-bottom: 1px solid #d0d0d0;
+}
+table.saved-users {
+  border: 1px solid #d0d0d0;
+}
+table.saved-users th {
+  padding: 0.6em 1.2em;
+}
+
+.content-title {
+  margin: 0;
+  margin-bottom: 0.5em;
+  padding: 0.5em 0 0.2em 0.5em;
+  border-bottom: 2px solid #444444;
+  background-color: #ddeeff;
+}
+.help {
+  border-radius: 1em;
+  padding: 0.2em;
+  width: 2em;
+  height:2em;
+  background-color: #ffffff;
+  border: 1px solid #808080;
+  color: #646464;
+  margin-left: 2em;
+}
+
+.compare {
+  border-radius: 1000px;
+  padding: 0.5rem 4.0rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  background-color: #27ae60;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border-color: #1e8449 !important;
+  border-width: 2px;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0) inset;
+}
+
+
 @media (max-width: 768px) {
   body { font-size: 10px; padding: 0.5em; }
   table { font-size: 10px; }
@@ -40,21 +181,25 @@ th { background-color: #c8c8e8; }
 </style>
 </head>
 <body>
-<div class="accordion-header" id="accordionHeader">ユーザー選択 ▼</div>
-<div class="accordion-content open" id="accordionContent">
-<div>
-  <input type="text" id="userIdInput" placeholder="ユーザーID" />
-  <button id="fetchButton">データ取得</button>
+<div class="outline">
+
+  <h1 class="content-title">弐寺☆12クリアランプ比較 <button class="help">?</button></h1>
+  <div class="accordion-header" id="accordionHeader">ユーザー選択 ▼</div>
+  <div class="accordion-content open" id="accordionContent">
+  <div>
+    <input type="text" id="userIdInput" placeholder="ユーザーID" />
+    <button id="fetchButton" class="round">データ取得</button>
+  </div>
+  <table id="userList" class="saved-users">
+    <thead>
+      <tr><th></th><th>名前</th><th>CPI</th><th>更新日</th><th>操作</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  </div>
+  <button id="compareButton" class="compare">比較</button>
+  <div id="compareArea"></div>
 </div>
-<table id="userList">
-  <thead>
-    <tr><th></th><th>名前</th><th>CPI</th><th></th>更新日時</th><th>操作</th></tr>
-  </thead>
-  <tbody></tbody>
-</table>
-</div>
-<button id="compareButton">比較</button>
-<div id="compareArea"></div>
 
 <script>
 (function() {
